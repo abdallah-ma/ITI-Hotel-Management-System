@@ -59,7 +59,7 @@ namespace Hotel.BLL.Managers
         public static int AddReservation(Reservation reservation)
         {
 
-            bool free = HotelDbContext.Rooms.FirstOrDefault(r => r.RoomNumber == reservation.RoomNumber && !r.Booked) != null;
+            bool free = HotelDbContext.Reservations.FirstOrDefault(r => r.RoomNumber == reservation.RoomNumber && r.Id != reservation.Id) == null;
 
             if (!free) return 0;
 
