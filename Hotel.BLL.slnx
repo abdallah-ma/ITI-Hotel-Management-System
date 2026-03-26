@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Hotel.BLL/Hotel.BLL.csproj" />
+  <Project Path="Hotel.DAL/Hotel.DAL.csproj" Id="7768a5fb-928a-4c2b-ae7e-e78238985d7c" />
+  <Project Path="Login/Hotel.UI.csproj" Id="edf28229-e247-4aae-b2cf-71d69909eb70" />
+</Solution>
